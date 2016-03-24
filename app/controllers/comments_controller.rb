@@ -4,6 +4,9 @@ class CommentsController < ApplicationController
   # GET /comments
   # GET /comments.json
   def index
+    @posts = Post.all
+    @images = Image.all
+    @links = Link.all
     @comments = Comment.all
   end
 
